@@ -7,12 +7,13 @@ import org.springframework.web.bind.annotation.RestController;
 
 @SpringBootApplication
 @RestController
+@RequestMapping("/api")
 public class Demo12Application {
 
     public static void main(String[] args) {
         SpringApplication.run(Demo12Application.class, args);
     }
-    @GetMapping("/api/get/hello")
+    @GetMapping("/hello")
     public String getHello() {
         return "Hello World!";
     }
