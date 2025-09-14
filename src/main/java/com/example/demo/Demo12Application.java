@@ -12,7 +12,7 @@ public class Demo12Application {
     public static void main(String[] args) {
         SpringApplication.run(Demo12Application.class, args);
     }
-    @GetMapping("api/get/hello")
+    @GetMapping("/api/get/hello")
     public String getHello() {
         return "Hello World!";
     }
